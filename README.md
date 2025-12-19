@@ -1,33 +1,124 @@
-# Lectures - Topics in Big Data CS:4266/5266
+# Big Data Course Website
 
-The goal of this class is to cover the concepts and recent progress made in the area of Big Data. The focus will be on principles and practices of data storage, data modeling techniques, data processing and querying, data analytics, and applications of machine learning using these systems. Throughout the class, you will learn about the applications of these topics in real-world case studies such as public transit systems and Emergency Response Systems. Visit the following sites and look at the dashboards to see an example of how we use these techniques for some of our projects.
+This is a responsive, single-page website for the Topics in Big Data course (CS:4266/5266) at Vanderbilt University.
 
- * https://smarttransit.ai/
- * https://statresp.ai
- 
+## Features
 
- # Expectations
+- 📱 Fully responsive design (mobile, tablet, desktop)
+- 🎨 Modern, clean UI with smooth animations
+- ⚡ Fast loading with optimized assets
+- ♿ Accessible navigation and keyboard support
+- 🌐 Ready for GitHub Pages deployment
 
-It is expected that the student taking this course is familiar with concepts like git, ssh, and cloud computing. Also, the primary programming language to be used in the course is python, which is one of the common languages used in data science and big data systems. Though we will use cloud computing resources for all assignments it is going to be important that you have a working computer with access to a terminal. As a starting point feel free to already install python 3.8 on your system. You can use anaconda if you are familiar with it. But any other python3 environment will be okay. Lastly, you will be assigned papers on some key topics and will be expected to read and write a report, which will be graded.
- 
-# Tools Used in The class
+## Deployment to GitHub Pages
 
-* Amazon Web Services
-* Google Colab or your own python environment on your machine. Look below to setup the python environment if you chose to not use google colab.
-* Brightspace for grading and class materials.
-* github for assignments
-* Microsoft Teams for Discussions (very similar to slack)
-* Zoom for communication
+### Option 1: Deploy from the `site` directory (Recommended)
 
-# Instructions
- 
-We have curated a set of instructional links and useful videos to understand the various technologies that you will be using in the course. All this material is available as a module in the class content.  
+1. Go to your repository settings on GitHub
+2. Navigate to **Pages** section
+3. Under "Build and deployment":
+   - Source: **Deploy from a branch**
+   - Branch: **main**
+   - Folder: **/site**
+4. Click **Save**
 
-# Examples
+Your site will be available at: `https://jptalusan.github.io/vu-topics-in-big-data-2026/`
 
-You will find a number of examples, python notebooks and sample exercises in the [github repository](https://github.com/vu-topics-in-big-data-2022/examples). You cannot edit it. But you can fork the examples repository and then run the examples in your own github account -- separate from the organization of the class. It will be your responsibility to keep your local version of examples up to date.  Take a look at https://gist.github.com/CristinaSolana/1885435  and https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork
+### Option 2: Deploy from root with custom path
 
-# Python Environment
-For example, a very simple way to set anaconda python is to install it on your machine and then create an environment. Just follow the instructions at [in this folder](https://github.com/vu-topics-in-big-data-2022/lectures/tree/main/python-environment). You can also use [google colab](https://towardsdatascience.com/getting-started-with-google-colab-f2fff97f594c). See instructions in the instruction folder on bright space.
+If you want to deploy from root, move `index.html`, `styles.css`, and `script.js` to the root directory.
 
-For other details, refer to the [brightspace page for the course](https://brightspace.vanderbilt.edu/d2l/le/content/342996/Home).
+## Local Development
+
+To preview the site locally:
+
+1. **Using Python's built-in server:**
+   ```bash
+   cd site
+   python3 -m http.server 8000
+   ```
+   Then visit: `http://localhost:8000`
+
+2. **Using Node.js (if you have it installed):**
+   ```bash
+   cd site
+   npx serve
+   ```
+
+3. **Using VS Code Live Server extension:**
+   - Install "Live Server" extension
+   - Right-click on `index.html`
+   - Select "Open with Live Server"
+
+## File Structure
+
+```
+site/
+├── index.html      # Main HTML file
+├── styles.css      # All styling
+├── script.js       # Interactive features
+├── assets/         # Images and PDFs
+└── readme.md       # This file
+```
+
+## Customization
+
+### Colors
+Edit CSS variables in `styles.css`:
+```css
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #7c3aed;
+    --accent-color: #f59e0b;
+    /* ... */
+}
+```
+
+### Content
+All content is in `index.html`. Each section is clearly marked with comments.
+
+### Adding New Weeks
+Add a new card in the `.weeks-grid` section:
+```html
+<div class="week-card">
+    <div class="week-number">Week 9</div>
+    <h3>Your Topic</h3>
+    <p>Description</p>
+    <a href="link" class="week-link">View Materials →</a>
+</div>
+```
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers
+
+## Performance
+
+- Vanilla JS (no frameworks = faster load)
+- CSS animations (GPU accelerated)
+- Lazy loading for images
+- Responsive images
+- Optimized assets
+
+## Accessibility
+
+- Semantic HTML5
+- ARIA labels where needed
+- Keyboard navigation
+- Focus indicators
+- Color contrast ratios meet WCAG 2.1 AA
+
+## License
+
+© 2026 Vanderbilt University
+
+## Credits
+
+Developed for CS:4266/5266 - Topics in Big Data
+
+ This year the class is online and synchronous. If there is an emergency please inform the instructor and follow localized safety instructions applicable to your condition and scenario.
+
