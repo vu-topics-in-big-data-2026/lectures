@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Topics in Big Data CS:4266/5266 - Vanderbilt University">
+    <title>Topics in Big Data - VU 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Big Data 2026</div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                <li><a href="#instructors" class="nav-link">Instructors</a></li>
+                <li><a href="#evaluation" class="nav-link">Grading</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Topics in Big Data</h1>
+            <p class="hero-subtitle">CS:4266/5266 - Vanderbilt University</p>
+            <p class="hero-description">Principles and practices of data storage, processing, analytics, and machine learning at scale</p>
+            <div class="hero-buttons">
+                <a href="#schedule" class="btn btn-primary">View Schedule</a>
+                <a href="https://github.com/jptalusan/vu-topics-in-big-data-2026" class="btn btn-secondary" target="_blank">GitHub Repository</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Course Overview</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>The goal of this class is to cover the concepts and recent progress made in the area of Big Data. The focus will be on principles and practices of data storage, data modeling techniques, data processing and querying, data analytics, and applications of machine learning using these systems.</p>
+                    <p>Throughout the class, you will learn about the applications of these topics in real-world case studies such as public transit systems and Emergency Response Systems.</p>
+                </div>
+                <div class="case-studies">
+                    <h3>Real-World Applications</h3>
+                    <div class="case-study-links">
+                        <a href="https://smarttransit.ai/" target="_blank" class="case-study-card">
+                            <h4>Smart Transit</h4>
+                            <p>Public Transit Analytics Dashboard</p>
+                        </a>
+                        <a href="https://statresp.ai" target="_blank" class="case-study-card">
+                            <h4>StatResp</h4>
+                            <p>Emergency Response Analytics</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prerequisites Section -->
+    <section id="prerequisites">
+        <div class="container">
+            <h2 class="section-title">Prerequisites & Expectations</h2>
+            <div class="prereq-grid">
+                <div class="prereq-card">
+                    <div class="prereq-icon">🐍</div>
+                    <h3>Python Programming</h3>
+                    <p>Proficiency in Python 3.8+ is required for assignments and projects</p>
+                </div>
+                <div class="prereq-card">
+                    <div class="prereq-icon">☁️</div>
+                    <h3>Cloud Computing</h3>
+                    <p>Basic familiarity with AWS and cloud computing concepts</p>
+                </div>
+                <div class="prereq-card">
+                    <div class="prereq-icon">📚</div>
+                    <h3>Git & SSH</h3>
+                    <p>Understanding of version control and secure shell protocols</p>
+                </div>
+                <div class="prereq-card">
+                    <div class="prereq-icon">📖</div>
+                    <h3>Academic Reading</h3>
+                    <p>Ability to read and analyze technical papers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <div class="container">
+            <h2 class="section-title">Course Schedule</h2>
+            <div class="schedule-info">
+                <a href="https://docs.google.com/spreadsheets/d/1S6dYhV9UzUiSuenGvq8ULp_EZlxMD_NGOgtBXjxoBUI/edit?usp=sharing" target="_blank" class="btn btn-primary">View Full Schedule</a>
+                <a href="assets/schedule-of-the-class.pdf" target="_blank" class="btn btn-secondary">Download PDF</a>
+            </div>
+            
+            <div class="weeks-grid">
+                <div class="week-card">
+                    <div class="week-header">
+                        <div class="week-title-row">
+                            <div class="week-number">Week 1</div>
+                            <h3>Basics</h3>
+                        </div>
+                        <div class="week-toggle">▼</div>
+                    </div>
+                    <div class="week-content">
+                        <div class="week-content-inner">
+                            <p>Introduction to big data concepts and fundamental principles</p>
+                            <a href="https://github.com/jptalusan/vu-topics-in-big-data-2026/tree/main/week1-basics" target="_blank" class="week-link">View Materials →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-header">
+                        <div class="week-title-row">
+                            <div class="week-number">Week 2</div>
+                            <h3>Data Storage Fundamentals</h3>
+                        </div>
+                        <div class="week-toggle">▼</div>
+                    </div>
+                    <div class="week-content">
+                        <div class="week-content-inner">
+                            <p>Storage systems, data formats (Parquet, CSV), and optimization techniques</p>
+                            <a href="https://github.com/jptalusan/vu-topics-in-big-data-2026/tree/main/week2-data-storage" target="_blank" class="week-link">View Materials →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-header">
+                        <div class="week-title-row">
+                            <div class="week-number">Week 3</div>
+                            <h3>Apache Spark Foundations</h3>
+                        </div>
+                        <div class="week-toggle">▼</div>
+                    </div>
+                    <div class="week-content">
+                        <div class="week-content-inner">
+                            <p>Introduction to Spark, RDDs, and distributed computing basics</p>
+                            <a href="https://github.com/jptalusan/vu-topics-in-big-data-2026/tree/main/week3-spark-foundations" target="_blank" class="week-link">View Materials →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-header">
+                        <div class="week-title-row">
+                            <div class="week-number">Week 4</div>
+                            <h3>Advanced Spark & Distributed Computing</h3>
+                        </div>
+                        <div class="week-toggle">▼</div>
+                    </div>
+                    <div class="week-content">
+                        <div class="week-content-inner">
+                            <p>Advanced Spark operations, optimization, and distributed algorithms</p>
+                            <a href="https://github.com/jptalusan/vu-topics-in-big-data-2026/tree/main/week4-advanced-spark" target="_blank" class="week-link">View Materials →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-header">
+                        <div class="week-title-row">
+                            <div class="week-number">Week 5</div>
+                            <h3>SQL at Scale</h3>
+                        </div>
+                        <div class="week-toggle">▼</div>
+                    </div>
+                    <div class="week-content">
+                        <div class="week-content-inner">
+                            <p>Graph databases and large-scale query processing</p>
+                            <a href="https://github.com/jptalusan/vu-topics-in-big-data-2026/tree/main/week5-sql-at-scale" target="_blank" class="week-link">View Materials →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-header">
+                        <div class="week-title-row">
+                            <div class="week-number">Week 6</div>
+                            <h3>Streaming Data Processing</h3>
+                        </div>
+                        <div class="week-toggle">▼</div>
+                    </div>
+                    <div class="week-content">
+                        <div class="week-content-inner">
+                            <p>Real-time data processing patterns and streaming architectures</p>
+                            <a href="https://github.com/jptalusan/vu-topics-in-big-data-2026/tree/main/week6-streaming" target="_blank" class="week-link">View Materials →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-header">
+                        <div class="week-title-row">
+                            <div class="week-number">Week 7</div>
+                            <h3>Real-time Analytics with Spark Streaming</h3>
+                        </div>
+                        <div class="week-toggle">▼</div>
+                    </div>
+                    <div class="week-content">
+                        <div class="week-content-inner">
+                            <p>Spark Streaming applications and real-time analytics</p>
+                            <a href="https://github.com/jptalusan/vu-topics-in-big-data-2026/tree/main/week7-realtime-analytics" target="_blank" class="week-link">View Materials →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-header">
+                        <div class="week-title-row">
+                            <div class="week-number">Week 8</div>
+                            <h3>Distributed Machine Learning</h3>
+                        </div>
+                        <div class="week-toggle">▼</div>
+                    </div>
+                    <div class="week-content">
+                        <div class="week-content-inner">
+                            <p>Ray Framework and distributed ML systems</p>
+                            <a href="https://github.com/jptalusan/vu-topics-in-big-data-2026/tree/main/week8-distributed-ml" target="_blank" class="week-link">View Materials →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="schedule-image">
+                <img src="assets/schedule-of-the-class.png" alt="Course Schedule" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section id="instructors">
+        <div class="container">
+            <h2 class="section-title">Instructors & Teaching Team</h2>
+            <div class="instructors-grid">
+                <div class="instructor-card primary">
+                    <h3>Prof. Abhishek Dubey</h3>
+                    <p class="role">Lead Instructor</p>
+                    <p class="availability">Office Hours: Fridays 2-3 PM US Central (by appointment)</p>
+                    <a href="https://engineering.vanderbilt.edu/bio/abhishek-dubey" target="_blank" class="instructor-link">View Profile →</a>
+                </div>
+                
+                <div class="instructor-card">
+                    <h3>Nithin Guruswamy</h3>
+                    <p class="role">Teaching Assistant (PhD Candidate)</p>
+                    <p class="availability">Office Hours: Mon 12-1 PM, Wed 3-4 PM Central</p>
+                </div>
+                
+                <div class="instructor-card">
+                    <h3>Zhuangwei Kang</h3>
+                    <p class="role">Teaching Assistant (PhD Candidate)</p>
+                    <p class="availability">Office Hours: Tue 11 AM-12 PM, Thu 5-6 PM Central</p>
+                </div>
+                
+                <div class="instructor-card">
+                    <h3>Riyan Kabir</h3>
+                    <p class="role">Undergraduate Grader</p>
+                </div>
+            </div>
+            
+            <div class="research-link">
+                <p>Interested in the team's research? Visit <a href="https://scopelab.ai/" target="_blank">scopelab.ai</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evaluation Section -->
+    <section id="evaluation">
+        <div class="container">
+            <h2 class="section-title">Evaluation Criteria</h2>
+            <div class="evaluation-content">
+                <div class="grading-breakdown collapsible-section">
+                    <div class="evaluation-header">
+                        <h3>Grade Breakdown</h3>
+                        <div class="eval-toggle">▼</div>
+                    </div>
+                    <div class="evaluation-body">
+                        <div class="evaluation-body-inner">
+                            <div class="grade-item">
+                                <div class="grade-bar" style="width: 40%"></div>
+                                <div class="grade-details">
+                                    <span class="grade-label">Programming Assignments</span>
+                                    <span class="grade-percentage">40%</span>
+                                </div>
+                            </div>
+                            <div class="grade-item">
+                                <div class="grade-bar" style="width: 25%"></div>
+                                <div class="grade-details">
+                                    <span class="grade-label">Paper Reports</span>
+                                    <span class="grade-percentage">25%</span>
+                                </div>
+                            </div>
+                            <div class="grade-item">
+                                <div class="grade-bar" style="width: 20%"></div>
+                                <div class="grade-details">
+                                    <span class="grade-label">Final Project</span>
+                                    <span class="grade-percentage">20%</span>
+                                </div>
+                            </div>
+                            <div class="grade-item">
+                                <div class="grade-bar" style="width: 10%"></div>
+                                <div class="grade-details">
+                                    <span class="grade-label">Quizzes</span>
+                                    <span class="grade-percentage">10%</span>
+                                </div>
+                            </div>
+                            <div class="grade-item">
+                                <div class="grade-bar" style="width: 5%"></div>
+                                <div class="grade-details">
+                                    <span class="grade-label">Survey & Participation</span>
+                                    <span class="grade-percentage">5%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="letter-grades collapsible-section">
+                    <div class="evaluation-header">
+                        <h3>Letter Grade Distribution</h3>
+                        <div class="eval-toggle">▼</div>
+                    </div>
+                    <div class="evaluation-body">
+                        <div class="evaluation-body-inner">
+                            <div class="grade-table">
+                                <div class="grade-row"><span class="grade-range">≥ 93.00</span><span class="grade-letter">A</span></div>
+                                <div class="grade-row"><span class="grade-range">90.00 - 92.99</span><span class="grade-letter">A-</span></div>
+                                <div class="grade-row"><span class="grade-range">87.00 - 89.99</span><span class="grade-letter">B+</span></div>
+                                <div class="grade-row"><span class="grade-range">83.00 - 86.99</span><span class="grade-letter">B</span></div>
+                                <div class="grade-row"><span class="grade-range">80.00 - 82.99</span><span class="grade-letter">B-</span></div>
+                                <div class="grade-row"><span class="grade-range">77.00 - 79.99</span><span class="grade-letter">C+</span></div>
+                                <div class="grade-row"><span class="grade-range">73.00 - 76.99</span><span class="grade-letter">C</span></div>
+                                <div class="grade-row"><span class="grade-range">70.00 - 72.99</span><span class="grade-letter">C-</span></div>
+                                <div class="grade-row"><span class="grade-range">≤ 59.99</span><span class="grade-letter">F</span></div>
+                            </div>
+                            <p class="grade-note">The instructor reserves the right to apply a curve to the final grades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="policies">
+                <div class="policy-card">
+                    <h3>⏰ Late Submission Policy</h3>
+                    <p>Submissions due by midnight on the specified date. Late submissions receive an automatic <strong>20% penalty per day</strong> applied to the graded score.</p>
+                </div>
+                
+                <div class="policy-card">
+                    <h3>🎓 Honor Policy</h3>
+                    <p>All work must be completed independently without assistance except from instructors, TAs, and provided course materials. <strong>No collaboration</strong> unless explicitly authorized.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources">
+        <div class="container">
+            <h2 class="section-title">Tools & Resources</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-category">
+                    <h3>Development Tools</h3>
+                    <ul class="resource-list">
+                        <li>Amazon Web Services (AWS)</li>
+                        <li>Google Colab / Local Python 3.8+ Environment</li>
+                        <li>Anaconda (optional)</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-category">
+                    <h3>Communication & Learning</h3>
+                    <ul class="resource-list">
+                        <li>Brightspace (grading & materials)</li>
+                        <li>Microsoft Teams (discussions)</li>
+                        <li>Zoom (virtual meetings)</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-category">
+                    <h3>Getting Started</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://github.com/vu-topics-in-big-data-2021/class-python-environment" target="_blank">Python Environment Setup</a></li>
+                        <li><a href="https://towardsdatascience.com/getting-started-with-google-colab-f2fff97f594c" target="_blank">Google Colab Guide</a></li>
+                        <li><a href="https://gist.github.com/CristinaSolana/1885435" target="_blank">Syncing Forked Repository</a></li>
+                    </ul>
+                </div>
+                
+                <div class="resource-category">
+                    <h3>Important Links</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://github.com/jptalusan/vu-topics-in-big-data-2026" target="_blank">Course Repository</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1S6dYhV9UzUiSuenGvq8ULp_EZlxMD_NGOgtBXjxoBUI/edit?usp=sharing" target="_blank">Schedule Spreadsheet</a></li>
+                        <li><a href="assets/schedule-of-the-class.pdf" target="_blank">Schedule PDF</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="github-info">
+                <h3>Working with Examples</h3>
+                <p>You'll find numerous examples, Python notebooks, and exercises in the GitHub repository. Fork the repository to your own account and keep it synced with updates throughout the semester.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Course Information</h4>
+                    <p>Topics in Big Data<br>CS:4266/5266<br>Vanderbilt University</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Accessibility</h4>
+                    <p>Vanderbilt is committed to equal opportunity for students with disabilities. Contact the Opportunity Development Center for accommodations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://scopelab.ai/" target="_blank">SCOPE Lab</a></li>
+                        <li><a href="https://engineering.vanderbilt.edu/" target="_blank">VU Engineering</a></li>
+                        <li><a href="https://github.com/jptalusan/vu-topics-in-big-data-2026" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vanderbilt University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
